@@ -26,6 +26,7 @@ export const useMapbox = (puntoInicial) => {
   // funcion para agregar marcadores
   const agregarMarcador = useCallback((ev) => {
     const { lng, lat } = ev.lngLat
+
     const marker = new mapboxgl.Marker()
     marker.id = v4() // TODO: si el marcador ya tiene ID
 
